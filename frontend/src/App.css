@@ -1,0 +1,86 @@
+html, body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  font-family: system-ui, sans-serif;
+}
+
+/* Fixed player at top */
+.player {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: #fff;
+  text-align: center;
+  padding: 1rem 1rem 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.player h1 {
+  margin: 0 0 0.15rem;
+  font-size: 1.25rem;
+}
+
+.player .artist {
+  margin: 0 0 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.player audio {
+  width: 100%;
+  max-width: 480px;
+}
+
+.player .controls {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.player .shortcuts {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+/* Lyrics area — push below fixed player */
+.lyrics {
+  padding: 10rem 1rem 60vh;
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+.segment {
+  margin: 1.2rem 0;
+}
+
+.word {
+  transition: color 0.3s ease-out, background-color 0.3s ease-out;
+  border-radius: 4px;
+  padding: 0 2px;
+}
+
+.word.active {
+  color: #fff;
+  background-color: #e53e3e;
+  font-weight: bold;
+  padding: 10px 4px 3px;
+  border-radius: 4px;
+  transition: color 0.05s ease-in, background-color 0.05s ease-in;
+}
+
+.status {
+  text-align: center;
+  margin-top: 4rem;
+  color: #666;
+}
